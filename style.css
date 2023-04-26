@@ -1,3 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  line-height: 1.5;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  font-family: 'Kumbh Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  width: 850px;
+  height: 500px;
+  border-radius: 30px;
+  position: relative;
+  padding: 50px;
+  margin-bottom: 20px;
+}
+
+.imgDiv{
+  /* background-color: green; */
+  width: 50%;
+  margin: 20px;
+  position: relative;
+  top: 0;
+  left: 50px;
+}
+
+.box{
+  width: 150px;
+  position: absolute;
+  top: 90px;
+  right: 400px;
+} 
+.woman{
+  width: 450px;
+  position: relative;
+  top: 0;
+  right: 150px;
+}
+.backgroungImg{
+  position: absolute;
+  top: -20px;
+  right: 120px;
+  width: 400px;
+}
+
+.accQuestion{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.acc{
+  padding: 10px;
+  border-bottom: 1px solid var(--Lightgrayishblue);
+}
+
+.acc p{
+  font-size: var(--Fontsize);
+  
+}
+
+.visibility{
+  display: none;
+}
+
+.title{
+  font-size: var(--Fontsize);
+  color: var(--Darkgrayishblue);
+}
+
+.title:hover{
+  color:var(--Verydarkgrayishblue)
+}
+
+
+:root{
+  --Verydarkdesaturatedblue: hsl(238, 29%, 16%);
+  --softred: hsl(14, 88%, 65%);
+
+  /* Text */
+  --Verydarkgrayishblue: hsl(237, 12%, 33%);
+  --Darkgrayishblue: hsl(240, 6%, 50%);
+  --Fontsize: 15px;
+
+  /* Dividers */
+  --Lightgrayishblue: hsl(240, 5%, 91%)
+}
 
 
 .attribution {
