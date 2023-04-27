@@ -57,8 +57,21 @@ body{
   width: 400px;
 }
 
-.accordionDiv{
-  width: 50%;
+
+.accAnswer{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease;
+}
+
+.accAnswer p {
+  font-size: var(--Fontsize);  
+
+}
+
+.acc.active .accAnswer{
+  max-height: 300px;
+  animation: fade 1s ease-in-out;
 }
 
 .accQuestion{
@@ -66,35 +79,37 @@ body{
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  margin-bottom: 5px;
+
 }
 
 .acc{
   padding: 10px 0px;
   border-bottom: 1px solid var(--Lightgrayishblue);
-}
-
-.acc p{
-  font-size: var(--Fontsize);
-  
-}
-
-.visibility{
-  display: none;
+  margin: 10px auto;
 }
 
 .title{
-  font-size: var(--Fontsize);
+  font-size: 14px;
   color: var(--Darkgrayishblue);
+  font-weight: 400;
 }
 
 .title:hover{
-  color:var(--Verydarkgrayishblue)
+  color:var(--softred)
 }
 
-.title.active{
-  color: var(--Verydarkdesaturatedblue);
+.acc.active .icon{
+  transform: rotate(180deg);
 }
 
+.icon{
+  transition: transform .5s ease-in;
+}
+
+.icon.active{
+  rotate: 180deg;
+}
 
 :root{
   --Verydarkdesaturatedblue: hsl(238, 29%, 16%);
@@ -103,7 +118,7 @@ body{
   /* Text */
   --Verydarkgrayishblue: hsl(237, 12%, 33%);
   --Darkgrayishblue: hsl(240, 6%, 50%);
-  --Fontsize: 15px;
+  --Fontsize: 14px;
 
   /* Dividers */
   --Lightgrayishblue: hsl(240, 5%, 91%)
@@ -116,4 +131,17 @@ body{
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+
+@keyframes fade{
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
