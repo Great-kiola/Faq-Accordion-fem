@@ -2,7 +2,9 @@ const faq = document.querySelectorAll(".acc");
 
 faq.forEach((faqs) => {
   faqs.addEventListener("click", () => {
+    
     const currentActive = document.querySelector(".acc.active");
+
     if (currentActive && currentActive !== faqs) {
       currentActive.classList.remove("active");
       currentActive.lastElementChild.style.maxHeight = 0;
