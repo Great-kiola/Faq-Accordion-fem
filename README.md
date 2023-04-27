@@ -14,7 +14,7 @@ Users should be able to:
 
 ## Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/faqaccordion-Fs4ScJv-Wn)
 - Live Site URL: [Live site URL](https://great-kiola.github.io/Faq-Accordion-fem/)
 
 ## Author
